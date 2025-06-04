@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Badge, rem } from "@mantine/core";
 import { IconWand } from "@tabler/icons-react";
 import Particle, {type ParticleProps} from "./Particle";
+import cauldron from '../../public/cauldron.png'
 
 type CauldronProps = {
   onClick: (e: React.MouseEvent) => void;
@@ -50,7 +51,7 @@ const Cauldron: React.FC<CauldronProps> = ({ onClick, power, particles }) => {
       <div style={{ position: "relative", width: rem(200), height: rem(200) }}>
         {/* Cauldron Image */}
         <img
-          src="cauldron.png"
+          src={cauldron}
           alt="Magic cauldron"
           style={{
             position: "absolute",
